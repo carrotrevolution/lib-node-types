@@ -1,4 +1,5 @@
 export * from './client-platform';
-export * from './language';
+export * from './currency';
+export * from './locale';
 export * from './revenue-cat';
 export * from './sendgrid';

@@ -1,4 +1,4 @@
-import {SupportedLanguage} from './language';
+import {SupportedLanguage} from './locale';
 
 type SendgridListItem = {[lang in SupportedLanguage]: string};
 
