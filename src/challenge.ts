@@ -36,9 +36,7 @@ export enum ChallengeActionEvent {
   APP_SHARED = 'app-shared',
 }
 
-export type ChallengeAction = RecipeCookedChallengeAction;
-
-export interface RecipeCookedChallengeAction {
+export interface ChallengeAction {
   event: ChallengeActionEvent;
   recipeRef?: string;
 }
