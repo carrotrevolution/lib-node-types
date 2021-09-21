@@ -17,3 +17,13 @@ export const RecipeConfigurationRefs = [
 export interface RecipeConfigurationOptions {
   refOrder: string[];
 }
+
+export interface RecipeConfiguration {
+  id: string;
+  ref: RecipeConfigurationRef;
+  options: RecipeConfigurationOptions;
+}
+
+export interface CreateRecipeConfigurationParams {
+  options?: RecipeConfigurationOptions;
+}

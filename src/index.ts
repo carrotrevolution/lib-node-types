@@ -15,6 +15,8 @@ export * from './recipe';
 export * from './recipe-collection';
 export * from './recipe-configuration';
 export * from './recipe-log';
+export * from './recipe-rating';
+export * from './refresh-token';
 export * from './revenue-cat';
 export * from './reward';
 export * from './sendgrid';
