@@ -1,15 +1,6 @@
 import {SupportedCurrency} from './currency';
+import {DocumentStatusType} from './document';
 import {StripeCoupon, StripePrice} from './stripe';
-
-export enum ProductConfigurationStatus {
-  ACTIVE = 'active',
-  REMOVED = 'removed',
-}
-
-export const ProductConfigurationStatuses = [
-  ProductConfigurationStatus.ACTIVE,
-  ProductConfigurationStatus.REMOVED,
-];
 
 export interface ProductConfigurationProduct {
   id: string;
@@ -22,7 +13,7 @@ export interface ProductConfigurationProduct {
 export interface ProductConfiguration {
   id: string;
   ref: string;
-  status: ProductConfigurationStatus;
+  status: DocumentStatusType;
   currencyCode?: SupportedCurrency;
   currencySymbol?: string;
   currencyUnitType?: number;
@@ -39,7 +30,7 @@ export interface CreateProductConfigurationProductParams {
 }
 
 export interface CreateProductConfigurationParams {
-  status?: ProductConfigurationStatus;
+  status?: DocumentStatusType;
   currencyCode?: SupportedCurrency;
   couponId?: string;
   expiresAt?: Date;

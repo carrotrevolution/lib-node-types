@@ -4,6 +4,7 @@ export * from './challenge-status';
 export * from './client-platform';
 export * from './currency';
 export * from './customer-identity';
+export * from './document';
 export * from './gift-code';
 export * from './info-notification';
 export * from './locale';

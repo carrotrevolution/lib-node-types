@@ -1,3 +1,5 @@
+import {DocumentStatusType} from './document';
+
 export interface InfoNotificationContent {
   id: string;
   bodyMD: string;
@@ -11,7 +13,7 @@ export interface InfoNotification {
   type: string;
   contents?: InfoNotificationContent[];
   content?: InfoNotificationContent;
-  status: string;
+  status: DocumentStatusType;
 }
 
 export interface CreateInfoNotificationContentParams {
@@ -24,5 +26,5 @@ export interface CreateInfoNotificationContentParams {
 export interface CreateInfoNotificationParams {
   type?: string;
   contents?: CreateInfoNotificationContentParams[];
-  status?: string;
+  status?: DocumentStatusType;
 }

@@ -1,14 +1,5 @@
+import {DocumentStatusType} from './document';
 import {SupportedLanguage} from './locale';
-
-export enum AvatarStatusType {
-  ACTIVE = 'active',
-  REMOVED = 'removed',
-}
-
-export const AvatarStatusTypes = [
-  AvatarStatusType.ACTIVE,
-  AvatarStatusType.REMOVED,
-];
 
 export interface AvatarContent {
   id: string;
@@ -19,7 +10,7 @@ export interface AvatarContent {
 
 export interface Avatar {
   id: string;
-  status: AvatarStatusType;
+  status: DocumentStatusType;
   ref: string;
   forVersion?: string;
   contents?: AvatarContent[];
@@ -33,7 +24,7 @@ export interface CreateOrUpdateAvatarContentParams {
 }
 
 export interface CreateAvatarParams {
-  status?: AvatarStatusType;
+  status?: DocumentStatusType;
   forVersion?: string;
   contents?: CreateOrUpdateAvatarContentParams[];
 }

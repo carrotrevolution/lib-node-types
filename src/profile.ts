@@ -1,3 +1,4 @@
+import {DocumentStatusType} from '.';
 import {Avatar} from './avatar';
 
 export interface ProfileStats {
@@ -15,7 +16,7 @@ export interface ProfileStats {
 export interface Profile {
   id: string;
   userId: string;
-  status: string;
+  status: DocumentStatusType;
   displayName: string;
   character: string;
   stats?: ProfileStats;
@@ -27,5 +28,5 @@ export interface Profile {
 export interface ProfileParams {
   displayName?: string;
   character?: string;
-  status?: string;
+  status?: DocumentStatusType;
 }
