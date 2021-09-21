@@ -15,3 +15,4 @@ export * from './revenue-cat';
 export * from './reward';
 export * from './sendgrid';
 export * from './special-diet';
+export * from './stripe';
