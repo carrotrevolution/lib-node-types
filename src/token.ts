@@ -1,3 +1,4 @@
+import {DocumentStatusType} from './document';
 import {User} from './user';
 
 export interface FullIdToken {
@@ -15,7 +16,7 @@ export interface RefreshToken {
 
 export interface ProfileToken {
   id: string;
-  status: string;
+  status: DocumentStatusType;
   displayName: string;
   character: string;
 }

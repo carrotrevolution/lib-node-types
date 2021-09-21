@@ -1,3 +1,5 @@
+import {DocumentStatusType} from './document';
+
 export type StripeCouponDuration = 'forever' | 'once' | 'repeating';
 export type StripePriceRecurringInterval = 'day' | 'month' | 'week' | 'year';
 export type StripePriceType = 'one_time' | 'recurring';
@@ -55,7 +57,7 @@ export interface StripeCustomerPortal {
 export interface StripeCustomer {
   id: string;
   userId: string;
-  status: string;
+  status: DocumentStatusType;
   customerId?: string;
   subscriptionId?: string;
   checkoutSessionId?: string;
