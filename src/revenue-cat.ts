@@ -163,3 +163,14 @@ export interface RevenueCatWebhook {
   event: RevenueCatWebhookEvent;
   api_version: string;
 }
+
+export interface RevenueCatEventLog {
+  id: string;
+  payload?: RevenueCatEventPayload;
+}
+
+export interface RevenueCatUserSubscriber {
+  id: string;
+  userId: string;
+  subscriber?: RevenueCatSubscriber;
+}

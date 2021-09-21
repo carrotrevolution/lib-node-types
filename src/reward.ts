@@ -9,3 +9,12 @@ export enum RewardStatus {
 }
 
 export const RewardStatuses = [RewardStatus.CHALLENGE_UNLOCKED];
+
+export interface Reward {
+  id: string;
+  profileId: string;
+  userId: string;
+  itemRef: string;
+  status: RewardStatus;
+  type: RewardType;
+}

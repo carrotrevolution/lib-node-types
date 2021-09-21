@@ -43,3 +43,21 @@ export interface CreateStripePriceParams {
   months: number;
   unitAmount: number;
 }
+
+export interface StripeCustomerPortal {
+  id: string;
+  portalURL: string;
+  cancelURL: string;
+  plansURL: string;
+  updatePaymentMethodURL: string;
+}
+
+export interface StripeCustomer {
+  id: string;
+  userId: string;
+  status: string;
+  customerId?: string;
+  subscriptionId?: string;
+  checkoutSessionId?: string;
+  cancelAtPeriodEnd?: boolean;
+}
