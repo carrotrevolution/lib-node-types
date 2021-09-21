@@ -2,6 +2,20 @@ import {DocumentStatusType} from './document';
 import {SupportedLanguage} from './locale';
 import {SpecialDiet} from './special-diet';
 
+export enum RecipeStepType {
+  TIMER = 'timer',
+  PERFORM = 'perform',
+  CAMERA = 'camera',
+  RATING = 'rating',
+}
+
+export const RecipeStepTypes = [
+  RecipeStepType.PERFORM,
+  RecipeStepType.TIMER,
+  RecipeStepType.CAMERA,
+  RecipeStepType.RATING,
+];
+
 export interface RecipeContent {
   id: string;
   title: string;
@@ -80,7 +94,7 @@ export interface RecipeStepContent {
 
 export interface RecipeStep {
   id: string;
-  type: string;
+  type: RecipeStepType;
   contents?: RecipeStepContent[];
   content?: RecipeStepContent;
   timerSec?: number;
@@ -95,7 +109,7 @@ export interface CreateRecipeStepContentParams {
 }
 
 export interface CreateRecipeStepParams {
-  type: string;
+  type: RecipeStepType;
   contents?: CreateRecipeStepContentParams[];
   timerSec?: number;
   waitForTimer: boolean;

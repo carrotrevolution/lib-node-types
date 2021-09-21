@@ -6,7 +6,6 @@ export interface User {
   firstName?: string;
   lastName?: string;
   emailConfirmed?: boolean;
-  subscriptionCategory?: string;
   entitlements?: string[];
   role?: string;
   preferredLang?: SupportedLanguage;
