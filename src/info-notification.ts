@@ -1,5 +1,15 @@
 import {DocumentStatusType} from './document';
 
+export enum InfoNotificationType {
+  WARNING = 'warning',
+  INFO = 'info',
+}
+
+export const InfoNotificationTypes = [
+  InfoNotificationType.WARNING,
+  InfoNotificationType.INFO,
+];
+
 export interface InfoNotificationContent {
   id: string;
   bodyMD: string;
@@ -10,7 +20,7 @@ export interface InfoNotificationContent {
 
 export interface InfoNotification {
   id: string;
-  type: string;
+  type: InfoNotificationType;
   contents?: InfoNotificationContent[];
   content?: InfoNotificationContent;
   status: DocumentStatusType;
@@ -24,7 +34,7 @@ export interface CreateInfoNotificationContentParams {
 }
 
 export interface CreateInfoNotificationParams {
-  type?: string;
+  type?: InfoNotificationType;
   contents?: CreateInfoNotificationContentParams[];
   status?: DocumentStatusType;
 }

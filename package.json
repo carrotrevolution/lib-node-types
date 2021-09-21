@@ -1,6 +1,6 @@
 {
   "name": "@carrotrevolution/node",
-  "version": "1.0.15",
+  "version": "1.0.16",
   "private": false,
   "description": "Node typings, helpers and constants",
   "main": "build/src/index.js",
