@@ -1,5 +1,5 @@
-import {DocumentStatusType} from '.';
 import {Avatar} from './avatar';
+import {DocumentStatusType} from './document';
 
 export interface ProfileStats {
   id: string;

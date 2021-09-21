@@ -1,3 +1,4 @@
+import {DocumentStatusType} from './document';
 import {SupportedLanguage} from './locale';
 import {SpecialDiet} from './special-diet';
 
@@ -27,7 +28,7 @@ export interface Recipe {
   difficulty: number;
   timeEstimateMin: number;
   ref: string;
-  status: string;
+  status: DocumentStatusType;
   specialDietRefs?: string[];
   badgeRefs?: string[];
   specialDiets?: SpecialDiet[];

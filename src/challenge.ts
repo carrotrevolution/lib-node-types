@@ -1,4 +1,4 @@
-import {ChallengeStatus} from '.';
+import {ChallengeStatus} from './challenge-status';
 import {SupportedLanguage} from './locale';
 import {Recipe} from './recipe';
 import {RewardType} from './reward';
