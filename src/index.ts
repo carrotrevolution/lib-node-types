@@ -9,6 +9,7 @@ export * from './info-notification';
 export * from './locale';
 export * from './product-configuration';
 export * from './profile';
+export * from './purchase-event-log';
 export * from './recipe';
 export * from './recipe-configuration';
 export * from './recipe-log';
