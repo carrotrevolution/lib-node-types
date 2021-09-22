@@ -153,7 +153,7 @@ export interface RevenueCatSubscriber {
   subscriptions: RevenueCatSubscriberSubscriptions;
 }
 
-export interface RevenueCatSubscriberResult {
+export interface RevenueCatSubscriberDataResult {
   request_date: string;
   request_date_ms: number;
   subscriber: RevenueCatSubscriber;
