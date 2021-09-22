@@ -159,3 +159,13 @@ export interface CustomerIdentity {
   createdAt?: Date;
   updatedAt?: Date;
 }
+
+export interface CustomerIdentityParams {
+  subscription?: CustomerIdentitySubscriptionParmas;
+  device?: CustomerIdentityDeviceParams;
+  profile?: CustomerIdentityProfileParams;
+  account?: CustomerIdentityAccountParams;
+  cooking?: CustomerIdentityCookingParams;
+  share?: CustomerIdentityShareParams;
+  comeback?: CustomerIdentityComebackParams;
+}
