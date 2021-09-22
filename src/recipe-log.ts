@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+
 import {ProductEnv} from './env';
 
 export enum ShareMedium {
@@ -27,7 +29,7 @@ export interface RecipeLog {
   recipeRef?: string;
   challengeRef?: string;
   env?: ProductEnv;
-  metadata?: unknown;
+  metadata?: any;
   createdAt?: Date;
   updatedAt?: Date;
 }

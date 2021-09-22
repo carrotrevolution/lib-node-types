@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+
 export interface UserAgentLocation {
   countryCode?: string;
   city?: string;
@@ -8,10 +10,10 @@ export interface AppUserAgent {
   userId: string;
   deviceId: string;
   env?: string;
-  agent?: unknown;
+  agent?: any;
   agentString?: string;
-  osInfo?: unknown;
-  packageInfo?: unknown;
+  osInfo?: any;
+  packageInfo?: any;
   location?: UserAgentLocation;
   createdAt?: Date;
   updatedAt?: Date;

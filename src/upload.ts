@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+
 export interface Upload {
   id: string;
   category: string;
@@ -6,7 +8,7 @@ export interface Upload {
   storageBucket: string;
   storagePath: string;
   downloadURL: string;
-  metadata?: unknown;
+  metadata?: any;
 }
 
 export interface UploadParams {

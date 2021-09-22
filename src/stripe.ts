@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+
 import {DocumentStatusType} from './document';
 
 export type StripeCouponDuration = 'forever' | 'once' | 'repeating';
@@ -13,7 +15,7 @@ export interface StripeCoupon {
   valid: boolean;
   duration: StripeCouponDuration;
   appliesTo?: StripeCouponAppliesTo;
-  metadata?: unknown;
+  metadata?: any;
   percentOff?: number;
 }
 
@@ -32,7 +34,7 @@ export interface StripePrice {
   id: string;
   active: boolean;
   currencyCode: string;
-  metadata?: unknown;
+  metadata?: any;
   productId: string;
   recurring?: StripePriceRecurring;
   type: StripePriceType;
