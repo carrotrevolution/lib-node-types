@@ -23,6 +23,7 @@ export * from './sendgrid';
 export * from './skill-video';
 export * from './special-diet';
 export * from './stripe';
+export * from './subscription';
 export * from './token';
 export * from './upload';
 export * from './user';
