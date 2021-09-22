@@ -1,4 +1,5 @@
 import {ChallengeStatus} from './challenge-status';
+import {DocumentStatusType} from './document';
 import {SupportedLanguage} from './locale';
 import {Recipe} from './recipe';
 import {RewardType} from './reward';
@@ -21,15 +22,6 @@ export interface ChallengeTaskConfig {
   recipeRefs?: string[];
   amountToComplete?: number;
 }
-
-export enum ChallengeStatusType {
-  ACTIVE = 'active',
-  REMOVED = 'removed',
-}
-export const ChallengeStatusTypes = [
-  ChallengeStatusType.ACTIVE,
-  ChallengeStatusType.REMOVED,
-];
 
 export enum ChallengeActionEvent {
   RECIPE_COOKED = 'recipe-cooked',
@@ -68,7 +60,7 @@ export interface ChallengeTask {
 export interface Challenge {
   id: string;
   ref: string;
-  status?: ChallengeStatusType;
+  status?: DocumentStatusType;
   myStatus?: ChallengeStatus;
   reward?: ChallengeReward;
   tasks?: ChallengeTask[];
@@ -99,7 +91,7 @@ export interface CreateChallengeTaskParams {
 }
 
 export interface CreateChallengeParams {
-  status?: ChallengeStatusType;
+  status?: DocumentStatusType;
   reward?: CreateChallengeRewardParams;
   tasks?: CreateChallengeTaskParams[];
   contents?: CreateChallengeContentParams[];
