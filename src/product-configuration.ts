@@ -23,16 +23,16 @@ export interface ProductConfiguration {
   products?: ProductConfigurationProduct[];
 }
 
-export interface CreateProductConfigurationProductParams {
+export interface CreateProductConfigurationProductInput {
   priceId: string;
   productId: string;
   freeTrialDays?: number;
 }
 
-export interface CreateProductConfigurationParams {
+export interface CreateProductConfigurationInput {
   status?: DocumentStatusType;
   currencyCode?: SupportedCurrency;
   couponId?: string;
   expiresAt?: Date;
-  products?: CreateProductConfigurationProductParams[];
+  products?: CreateProductConfigurationProductInput[];
 }

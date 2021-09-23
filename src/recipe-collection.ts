@@ -28,9 +28,9 @@ export interface RecipeCollection {
   status: DocumentStatusType;
 }
 
-export interface CreateCollectionElementParams {
+export interface CreateCollectionElementInput {
   recipeRefs: string[];
-  contents: CreateCollectionElementContentParams[];
+  contents: CreateCollectionElementContentInput[];
   backgroundColor?: string;
   titleColor?: string;
   forVersion?: string;
@@ -38,12 +38,12 @@ export interface CreateCollectionElementParams {
   forLanguages?: string[];
 }
 
-export interface CreateCollectionParams {
-  elements?: CreateCollectionElementParams[];
+export interface CreateCollectionInput {
+  elements?: CreateCollectionElementInput[];
   status?: DocumentStatusType;
 }
 
-export interface CreateCollectionElementContentParams {
+export interface CreateCollectionElementContentInput {
   lang: SupportedLanguage;
   title: string;
 }

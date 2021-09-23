@@ -11,7 +11,7 @@ export interface Upload {
   metadata?: any;
 }
 
-export interface UploadParams {
+export interface UploadInput {
   ref: string;
   lang: string;
   category: string;

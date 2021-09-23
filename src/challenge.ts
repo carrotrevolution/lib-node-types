@@ -71,7 +71,7 @@ export interface Challenge {
   forCountries?: string[];
 }
 
-export interface CreateChallengeContentParams {
+export interface CreateChallengeContentInput {
   title: string;
   bodyMD: string;
   rewardTitle: string;
@@ -79,22 +79,22 @@ export interface CreateChallengeContentParams {
   previewImageURL: string;
 }
 
-export interface CreateChallengeRewardParams {
+export interface CreateChallengeRewardInput {
   type: RewardType;
   config: ChallengeRewardConfig;
 }
 
-export interface CreateChallengeTaskParams {
+export interface CreateChallengeTaskInput {
   ref: string;
   type: ChallengeTaskType;
   config: ChallengeTaskConfig;
 }
 
-export interface CreateChallengeParams {
+export interface CreateChallengeInput {
   status?: DocumentStatusType;
-  reward?: CreateChallengeRewardParams;
-  tasks?: CreateChallengeTaskParams[];
-  contents?: CreateChallengeContentParams[];
+  reward?: CreateChallengeRewardInput;
+  tasks?: CreateChallengeTaskInput[];
+  contents?: CreateChallengeContentInput[];
   forVersion?: string;
   forLanguages?: string[];
   forCountries?: string[];

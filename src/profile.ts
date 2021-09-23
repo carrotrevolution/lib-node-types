@@ -25,7 +25,7 @@ export interface Profile {
   characterAvatar?: Avatar;
 }
 
-export interface ProfileParams {
+export interface ProfileInput {
   displayName?: string;
   character?: string;
   status?: DocumentStatusType;

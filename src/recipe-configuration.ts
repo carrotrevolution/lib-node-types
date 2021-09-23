@@ -24,6 +24,6 @@ export interface RecipeConfiguration {
   options: RecipeConfigurationOptions;
 }
 
-export interface CreateRecipeConfigurationParams {
+export interface CreateRecipeConfigurationInput {
   options?: RecipeConfigurationOptions;
 }

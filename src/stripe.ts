@@ -19,7 +19,7 @@ export interface StripeCoupon {
   percentOff?: number;
 }
 
-export interface CreateStripeCouponParams {
+export interface CreateStripeCouponInput {
   duration: StripeCouponDuration;
   productIds: string[];
   percentOff: number;
@@ -41,7 +41,7 @@ export interface StripePrice {
   unitAmount?: number;
 }
 
-export interface CreateStripePriceParams {
+export interface CreateStripePriceInput {
   currencyCode: string;
   productId: string;
   months: number;

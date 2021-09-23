@@ -17,14 +17,14 @@ export interface Avatar {
   content?: AvatarContent;
 }
 
-export interface CreateOrUpdateAvatarContentParams {
+export interface CreateOrUpdateAvatarContentInput {
   lang: string;
   title: string;
   imageURL: string;
 }
 
-export interface CreateAvatarParams {
+export interface CreateAvatarInput {
   status?: DocumentStatusType;
   forVersion?: string;
-  contents?: CreateOrUpdateAvatarContentParams[];
+  contents?: CreateOrUpdateAvatarContentInput[];
 }

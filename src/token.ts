@@ -27,7 +27,7 @@ export interface UserToken {
   profile?: ProfileToken;
 }
 
-export interface SignUpWithEmailAndPasswordParams {
+export interface SignUpWithEmailAndPasswordInput {
   firstName?: string;
   lastName?: string;
   preferredLang?: string;

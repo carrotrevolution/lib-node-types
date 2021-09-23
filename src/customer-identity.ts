@@ -24,7 +24,7 @@ export interface CustomerIdentitySubscription {
   subscriptionCancelledAt?: Date;
 }
 
-export interface CustomerIdentitySubscriptionParmas {
+export interface CustomerIdentitySubscriptionInput {
   hasPremium: boolean;
   entitlements?: string[];
   hasActiveTrial: boolean;
@@ -66,7 +66,7 @@ export interface CustomerIdentityDevice {
   lastAppVersion?: string;
 }
 
-export interface CustomerIdentityDeviceParams {
+export interface CustomerIdentityDeviceInput {
   lastCountry?: string;
   lastCity?: string;
   tabletUser: boolean;
@@ -91,7 +91,7 @@ export interface CustomerIdentityProfile {
   profileCreatedAt?: Date;
 }
 
-export interface CustomerIdentityProfileParams {
+export interface CustomerIdentityProfileInput {
   hasCreatedProfile: boolean;
   profileCreatedAt?: Date;
 }
@@ -104,7 +104,7 @@ export interface CustomerIdentityAccount {
   preferredLang?: string;
 }
 
-export interface CustomerIdentityAccountParams {
+export interface CustomerIdentityAccountInput {
   email: string;
   emailConfirmed: boolean;
   preferredLang?: string;
@@ -118,7 +118,7 @@ export interface CustomerIdentityCooking {
   totalCooked?: number;
 }
 
-export interface CustomerIdentityCookingParams {
+export interface CustomerIdentityCookingInput {
   hasCooked: boolean;
   lastCookedAt?: Date;
   totalCooked: number;
@@ -130,7 +130,7 @@ export interface CustomerIdentityComeback {
   lastReturnAt?: Date;
 }
 
-export interface CustomerIdentityComebackParams {
+export interface CustomerIdentityComebackInput {
   hasReturned: boolean;
   lastReturnAt?: Date;
 }
@@ -141,7 +141,7 @@ export interface CustomerIdentityShare {
   lastSharedAt?: Date;
 }
 
-export interface CustomerIdentityShareParams {
+export interface CustomerIdentityShareInput {
   hasShared: boolean;
   lastSharedAt?: Date;
 }
@@ -160,12 +160,12 @@ export interface CustomerIdentity {
   updatedAt?: Date;
 }
 
-export interface CustomerIdentityParams {
-  subscription?: CustomerIdentitySubscriptionParmas;
-  device?: CustomerIdentityDeviceParams;
-  profile?: CustomerIdentityProfileParams;
-  account?: CustomerIdentityAccountParams;
-  cooking?: CustomerIdentityCookingParams;
-  share?: CustomerIdentityShareParams;
-  comeback?: CustomerIdentityComebackParams;
+export interface CustomerIdentityInput {
+  subscription?: CustomerIdentitySubscriptionInput;
+  device?: CustomerIdentityDeviceInput;
+  profile?: CustomerIdentityProfileInput;
+  account?: CustomerIdentityAccountInput;
+  cooking?: CustomerIdentityCookingInput;
+  share?: CustomerIdentityShareInput;
+  comeback?: CustomerIdentityComebackInput;
 }

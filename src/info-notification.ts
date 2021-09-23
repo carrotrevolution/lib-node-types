@@ -26,15 +26,15 @@ export interface InfoNotification {
   status: DocumentStatusType;
 }
 
-export interface CreateInfoNotificationContentParams {
+export interface CreateInfoNotificationContentInput {
   bodyMD?: string;
   title?: string;
   lang?: string;
   displayImageURL?: string;
 }
 
-export interface CreateInfoNotificationParams {
+export interface CreateInfoNotificationInput {
   type?: InfoNotificationType;
-  contents?: CreateInfoNotificationContentParams[];
+  contents?: CreateInfoNotificationContentInput[];
   status?: DocumentStatusType;
 }

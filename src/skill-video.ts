@@ -17,14 +17,14 @@ export interface SkillVideo {
   content?: SkillVideoContent;
 }
 
-export interface CreateOrUpdateSkillVideoContentParams {
+export interface CreateOrUpdateSkillVideoContentInput {
   lang: string;
   title: string;
   videoURL: string;
   previewImageURL: string;
 }
 
-export interface CreateSkillVideoParams {
+export interface CreateSkillVideoInput {
   status?: DocumentStatusType;
-  contents?: CreateOrUpdateSkillVideoContentParams[];
+  contents?: CreateOrUpdateSkillVideoContentInput[];
 }

@@ -7,7 +7,7 @@ export interface RecipeRating {
   comment?: string;
 }
 
-export interface RateRecipeParams {
+export interface RateRecipeInput {
   rating: number;
   comment?: string;
 }

@@ -57,23 +57,23 @@ export interface Recipe {
   forCountries?: string[];
 }
 
-export interface CreateRecipeShopLinkParams {
+export interface CreateRecipeShopLinkInput {
   title: string;
   lang: SupportedLanguage;
   shopURL: string;
 }
 
-export interface CreateRecipeContentParams {
+export interface CreateRecipeContentInput {
   title: string;
   lang: SupportedLanguage;
   ingredientsMD?: string;
   previewImageURL?: string;
 }
 
-export interface CreateRecipeParams {
-  contents?: CreateRecipeContentParams[];
-  steps?: CreateRecipeStepParams[];
-  shopLinks?: CreateRecipeShopLinkParams[];
+export interface CreateRecipeInput {
+  contents?: CreateRecipeContentInput[];
+  steps?: CreateRecipeStepInput[];
+  shopLinks?: CreateRecipeShopLinkInput[];
   expReward?: number;
   difficulty?: number;
   timeEstimateMin?: number;
@@ -102,15 +102,15 @@ export interface RecipeStep {
   skillVideoRefs?: string[];
 }
 
-export interface CreateRecipeStepContentParams {
+export interface CreateRecipeStepContentInput {
   lang: SupportedLanguage;
   videoURL?: string;
   bodyMD?: string;
 }
 
-export interface CreateRecipeStepParams {
+export interface CreateRecipeStepInput {
   type: RecipeStepType;
-  contents?: CreateRecipeStepContentParams[];
+  contents?: CreateRecipeStepContentInput[];
   timerSec?: number;
   waitForTimer: boolean;
   skillVideoRefs?: string[];
