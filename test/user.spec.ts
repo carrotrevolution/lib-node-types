@@ -1,4 +1,4 @@
-import {UserValidators} from './';
+import {UserValidators} from '../src/user';
 
 describe('UserValidators', () => {
   const CORRECT_EMAIL = 'email@gmail.com';
