@@ -20,7 +20,7 @@ export interface RecipeConfigurationOptions {
 
 export interface RecipeConfiguration {
   id: string;
-  ref: RecipeConfigurationRef;
+  ref: string;
   options: RecipeConfigurationOptions;
 }
 

@@ -22,7 +22,7 @@ export interface SpecialDietContent {
 }
 
 export interface SpecialDiet {
-  ref: SpecialDietType;
+  ref: string;
   iconURL: string;
   freeOf: boolean;
   contents?: SpecialDietContent[];
