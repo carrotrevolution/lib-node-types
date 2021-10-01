@@ -15,6 +15,7 @@ export interface UploadInput {
   ref: string;
   lang: string;
   category: string;
+  contentType: string;
 }
 
 export type SignedURLAction = 'read' | 'write' | 'delete' | 'resumable';
