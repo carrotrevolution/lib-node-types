@@ -23,6 +23,6 @@ export interface SignedURL {
   action: SignedURLAction;
   expiresAt: Date;
   fileName: string;
-  storagePath: string;
+  signedURL: string;
   downloadURL: string;
 }
