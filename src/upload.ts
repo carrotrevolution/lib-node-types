@@ -16,3 +16,13 @@ export interface UploadInput {
   lang: string;
   category: string;
 }
+
+export type SignedURLAction = 'read' | 'write' | 'delete' | 'resumable';
+
+export interface SignedURL {
+  action: SignedURLAction;
+  expiresAt: Date;
+  fileName: string;
+  storagePath: string;
+  downloadURL: string;
+}
