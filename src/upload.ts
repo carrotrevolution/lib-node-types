@@ -25,5 +25,6 @@ export interface SignedURL {
   expiresAt: Date;
   fileName: string;
   signedURL: string;
+  storagePath: string;
   downloadURL: string;
 }
