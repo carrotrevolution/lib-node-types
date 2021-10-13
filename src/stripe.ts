@@ -18,6 +18,7 @@ export interface StripeCoupon {
   metadata?: any;
   percentOff?: number;
   amountOff?: number;
+  currencyCode?: string;
 }
 
 export interface CreateStripeCouponInput {
@@ -25,6 +26,7 @@ export interface CreateStripeCouponInput {
   productIds: string[];
   percentOff?: number;
   amountOff?: number;
+  currencyCode?: string;
 }
 
 export interface StripePriceRecurring {
