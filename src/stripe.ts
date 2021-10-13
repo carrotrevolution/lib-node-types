@@ -17,6 +17,7 @@ export interface StripeCoupon {
   appliesTo?: StripeCouponAppliesTo;
   metadata?: any;
   percentOff?: number;
+  amountOff?: number;
 }
 
 export interface CreateStripeCouponInput {
