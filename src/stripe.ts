@@ -22,7 +22,8 @@ export interface StripeCoupon {
 export interface CreateStripeCouponInput {
   duration: StripeCouponDuration;
   productIds: string[];
-  percentOff: number;
+  percentOff?: number;
+  amountOff?: number;
 }
 
 export interface StripePriceRecurring {
