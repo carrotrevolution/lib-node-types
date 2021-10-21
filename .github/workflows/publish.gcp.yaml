@@ -1,0 +1,27 @@
+name: publish (main)
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 14
+          registry-url: 'https://europe-west1-npm.pkg.dev/carrotkitchen/npm-packages/'
+          scope: '@carrotrevolution'
+      - run: npm ci
+      - run: npm run test
+      - run: npm run lint
+      - run: npm run compile
+      - run: npm run publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GCP_SA_KEY }}

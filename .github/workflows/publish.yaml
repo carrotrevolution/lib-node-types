@@ -1,9 +1,9 @@
-name: publish (main)
+name: publish (asd)
 
 on:
   push:
     branches:
-      - main
+      - asd
 
 jobs:
   publish:
