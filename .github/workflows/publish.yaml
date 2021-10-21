@@ -1,9 +1,9 @@
-name: publish (aasa)
+name: publish (main)
 
 on:
   push:
     branches:
-      - aasa
+      - main
 
 jobs:
   publish:
