@@ -24,6 +24,8 @@ jobs:
           project_id: ${{ secrets.GCP_PROJECT_ID }}
           service_account_key: ${{ secrets.GCP_SA_KEY }}
           export_default_credentials: true
+      - name: Login GCloud
+        run: gcloud auth application-default login
       - run: npm run auth-artifactregistry
       - run: npm ci
       - run: npm run test
