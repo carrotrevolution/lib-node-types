@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+
 import {SupportedLanguage} from './locale';
 import {RevenueCatDuration} from './revenue-cat';
 
@@ -41,6 +43,7 @@ export interface GiftCode {
   sendTo?: GiftCodeSendTo;
   downloadURL?: string;
   message?: string;
+  metadata?: any;
 }
 
 export interface GiftCodeSendTo {
