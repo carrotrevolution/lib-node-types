@@ -22,6 +22,6 @@ jobs:
       - run: npm run test
       - run: npm run lint
       - run: npm run compile
-      - run: npm run publish
+      - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GCP_SA_KEY }}
