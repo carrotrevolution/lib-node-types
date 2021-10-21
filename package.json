@@ -15,8 +15,7 @@
     "lint": "gts lint",
     "clean": "gts clean",
     "compile": "tsc",
-    "fix": "gts fix",
-    "auth-artifactregistry": "npx google-artifactregistry-auth .npmrc"
+    "fix": "gts fix"
   },
   "devDependencies": {
     "@types/jest": "^27.0.2",
