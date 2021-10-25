@@ -7,6 +7,11 @@ export enum ProductConfigurationCategory {
   SUBSCRIPTION = 'subscription',
 }
 
+export const ProductConfigurationCategories = [
+  ProductConfigurationCategory.GIFT,
+  ProductConfigurationCategory.SUBSCRIPTION,
+];
+
 export interface ProductConfigurationProduct {
   id: string;
   productId: string;
