@@ -2,6 +2,11 @@ import {SupportedCurrency} from './currency';
 import {DocumentStatusType} from './document';
 import {StripeCoupon, StripePrice} from './stripe';
 
+export enum ProductConfigurationCategory {
+  GIFT = 'gift',
+  SUBSCRIPTION = 'subscription',
+}
+
 export interface ProductConfigurationProduct {
   id: string;
   productId: string;
@@ -14,6 +19,7 @@ export interface ProductConfiguration {
   id: string;
   ref: string;
   status: DocumentStatusType;
+  category: ProductConfigurationCategory;
   currencyCode?: SupportedCurrency;
   currencySymbol?: string;
   currencyUnitType?: number;
@@ -35,4 +41,5 @@ export interface CreateProductConfigurationInput {
   couponId?: string;
   expiresAt?: Date;
   products?: CreateProductConfigurationProductInput[];
+  category?: ProductConfigurationCategory;
 }
