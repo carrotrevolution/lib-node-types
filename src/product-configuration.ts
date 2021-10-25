@@ -48,3 +48,15 @@ export interface CreateProductConfigurationInput {
   products?: CreateProductConfigurationProductInput[];
   category?: ProductConfigurationCategory;
 }
+
+export interface CreateSubscriptionProductConfigurationCheckoutInput {
+  ref: string;
+  productId: string;
+}
+
+export interface CreateGiftProductConfigurationCheckoutInput {
+  ref: string;
+  productId: string;
+  message?: string;
+  backgroundImageURL?: string;
+}
