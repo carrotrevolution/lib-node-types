@@ -55,6 +55,7 @@ export interface CreateSubscriptionProductConfigurationCheckoutInput {
 }
 
 export interface CreateGiftProductConfigurationCheckoutInput {
+  email: string;
   ref: string;
   productId: string;
   message?: string;
