@@ -69,3 +69,7 @@ export interface StripeCustomer {
   checkoutSessionId?: string;
   cancelAtPeriodEnd?: boolean;
 }
+
+export interface StripeCheckoutSession {
+  sessionId: string;
+}
