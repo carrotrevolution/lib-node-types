@@ -1,3 +1,4 @@
+import {SupportedLanguage} from '.';
 import {SupportedCurrency} from './currency';
 import {DocumentStatusType} from './document';
 import {StripeCoupon, StripePrice} from './stripe';
@@ -58,6 +59,7 @@ export interface CreateGiftProductConfigurationCheckoutInput {
   email: string;
   ref: string;
   productId: string;
+  lang: SupportedLanguage;
   message?: string;
   backgroundImageURL?: string;
 }
