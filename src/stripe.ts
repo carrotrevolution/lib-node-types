@@ -48,7 +48,10 @@ export interface StripePrice {
 export interface CreateStripePriceInput {
   currencyCode: string;
   productId: string;
-  months: number;
+  recurring?: {
+    interval: 'month';
+    intervalCount: number;
+  };
   unitAmount: number;
 }
 
