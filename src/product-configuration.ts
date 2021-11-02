@@ -1,6 +1,7 @@
-import {SupportedLanguage} from '.';
 import {SupportedCurrency} from './currency';
 import {DocumentStatusType} from './document';
+import {SupportedLanguage} from './locale';
+import {RevenueCatDuration} from './revenue-cat';
 import {StripeCoupon, StripePrice} from './stripe';
 
 export enum ProductConfigurationCategory {
@@ -19,6 +20,7 @@ export interface ProductConfigurationProduct {
   priceId: string;
   price?: StripePrice;
   freeTrialDays?: number;
+  duration: RevenueCatDuration;
 }
 
 export interface ProductConfiguration {
@@ -38,6 +40,7 @@ export interface ProductConfiguration {
 export interface CreateProductConfigurationProductInput {
   priceId: string;
   productId: string;
+  duration: RevenueCatDuration;
   freeTrialDays?: number;
 }
 
