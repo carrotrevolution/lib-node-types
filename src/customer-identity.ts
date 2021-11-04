@@ -1,5 +1,5 @@
-import {ClientPlatform} from './client-platform';
-import {RevenueCatDuration, RevenueCatStore} from './revenue-cat';
+import { ClientPlatform } from './client-platform';
+import { RevenueCatDuration, RevenueCatStore } from './revenue-cat';
 
 export interface CustomerIdentitySubscription {
   id: string;
@@ -85,6 +85,21 @@ export interface CustomerIdentityDeviceInput {
   lastAppVersion?: string;
 }
 
+export interface CustomerIdentityGift {
+  id: string;
+  hasClaimedGift: boolean;
+  lastClaimedGiftCode?: string;
+  lastClaimedGiftCategory?: string;
+  lastGiftClaimedAt?: Date;
+}
+
+export interface CustomerIdentityGiftInput {
+  hasClaimedGift: boolean;
+  lastClaimedGiftCode?: string;
+  lastClaimedGiftCategory?: string;
+  lastGiftClaimedAt?: Date;
+}
+
 export interface CustomerIdentityProfile {
   id: string;
   hasCreatedProfile: boolean;
@@ -156,6 +171,7 @@ export interface CustomerIdentity {
   cooking?: CustomerIdentityCooking;
   share?: CustomerIdentityShare;
   comeback?: CustomerIdentityComeback;
+  gift?: CustomerIdentityGift;
   createdAt?: Date;
   updatedAt?: Date;
 }
@@ -168,4 +184,5 @@ export interface CustomerIdentityInput {
   cooking?: CustomerIdentityCookingInput;
   share?: CustomerIdentityShareInput;
   comeback?: CustomerIdentityComebackInput;
+  gift?: CustomerIdentityGift;
 }
