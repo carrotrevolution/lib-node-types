@@ -1,5 +1,5 @@
-import { ClientPlatform } from './client-platform';
-import { RevenueCatDuration, RevenueCatStore } from './revenue-cat';
+import {ClientPlatform} from './client-platform';
+import {RevenueCatDuration, RevenueCatStore} from './revenue-cat';
 
 export interface CustomerIdentitySubscription {
   id: string;
