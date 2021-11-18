@@ -185,5 +185,5 @@ export interface CustomerIdentityInput {
   cooking?: CustomerIdentityCookingInput;
   share?: CustomerIdentityShareInput;
   comeback?: CustomerIdentityComebackInput;
-  gift?: CustomerIdentityGift;
+  gift?: CustomerIdentityGiftInput;
 }
