@@ -1,4 +1,5 @@
 import {ClientPlatform} from './client-platform';
+import {GiftCodeCategory} from './gift-code';
 import {RevenueCatDuration, RevenueCatStore} from './revenue-cat';
 
 export interface CustomerIdentitySubscription {
@@ -89,14 +90,14 @@ export interface CustomerIdentityGift {
   id: string;
   hasClaimedGift: boolean;
   lastClaimedGiftCode?: string;
-  lastClaimedGiftCategory?: string;
+  lastClaimedGiftCategory?: GiftCodeCategory;
   lastGiftClaimedAt?: Date;
 }
 
 export interface CustomerIdentityGiftInput {
   hasClaimedGift: boolean;
   lastClaimedGiftCode?: string;
-  lastClaimedGiftCategory?: string;
+  lastClaimedGiftCategory?: GiftCodeCategory;
   lastGiftClaimedAt?: Date;
 }
 
