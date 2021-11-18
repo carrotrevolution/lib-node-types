@@ -23,6 +23,7 @@ export interface CustomerIdentitySubscription {
   subscriptionStore?: RevenueCatStore;
   subscriptionPeriod?: RevenueCatDuration;
   subscriptionCancelledAt?: Date;
+  lastCurrency?: string;
 }
 
 export interface CustomerIdentitySubscriptionInput {
@@ -45,6 +46,7 @@ export interface CustomerIdentitySubscriptionInput {
   subscriptionStore?: RevenueCatStore;
   subscriptionPeriod?: RevenueCatDuration;
   subscriptionCancelledAt?: Date;
+  lastCurrency?: string;
 }
 
 export interface CustomerIdentityDevice {
