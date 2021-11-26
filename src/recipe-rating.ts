@@ -1,3 +1,5 @@
+import {SupportedLanguage} from './locale';
+
 export interface RecipeRating {
   id: string;
   ref: string;
@@ -5,7 +7,7 @@ export interface RecipeRating {
   profileId: string;
   rating: number;
   comment?: string;
-  lang?: string;
+  lang?: SupportedLanguage;
 }
 
 export interface RateRecipeInput {
