@@ -5,6 +5,7 @@ export interface RecipeRating {
   profileId: string;
   rating: number;
   comment?: string;
+  lang?: string;
 }
 
 export interface RateRecipeInput {
