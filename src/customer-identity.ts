@@ -1,4 +1,5 @@
 import {ClientPlatform} from './client-platform';
+import {GiftCodeCategory} from './gift-code';
 import {RevenueCatDuration, RevenueCatStore} from './revenue-cat';
 
 export interface CustomerIdentitySubscription {
@@ -22,6 +23,7 @@ export interface CustomerIdentitySubscription {
   subscriptionStore?: RevenueCatStore;
   subscriptionPeriod?: RevenueCatDuration;
   subscriptionCancelledAt?: Date;
+  lastCurrency?: string;
 }
 
 export interface CustomerIdentitySubscriptionInput {
@@ -44,6 +46,7 @@ export interface CustomerIdentitySubscriptionInput {
   subscriptionStore?: RevenueCatStore;
   subscriptionPeriod?: RevenueCatDuration;
   subscriptionCancelledAt?: Date;
+  lastCurrency?: string;
 }
 
 export interface CustomerIdentityDevice {
@@ -83,6 +86,21 @@ export interface CustomerIdentityDeviceInput {
   lastAppTokenAt?: Date;
   signUpPlatform: ClientPlatform;
   lastAppVersion?: string;
+}
+
+export interface CustomerIdentityGift {
+  id: string;
+  hasClaimedGift: boolean;
+  lastClaimedGiftCode?: string;
+  lastClaimedGiftCategory?: GiftCodeCategory;
+  lastGiftClaimedAt?: Date;
+}
+
+export interface CustomerIdentityGiftInput {
+  hasClaimedGift: boolean;
+  lastClaimedGiftCode?: string;
+  lastClaimedGiftCategory?: GiftCodeCategory;
+  lastGiftClaimedAt?: Date;
 }
 
 export interface CustomerIdentityProfile {
@@ -156,6 +174,7 @@ export interface CustomerIdentity {
   cooking?: CustomerIdentityCooking;
   share?: CustomerIdentityShare;
   comeback?: CustomerIdentityComeback;
+  gift?: CustomerIdentityGift;
   createdAt?: Date;
   updatedAt?: Date;
 }
@@ -168,4 +187,5 @@ export interface CustomerIdentityInput {
   cooking?: CustomerIdentityCookingInput;
   share?: CustomerIdentityShareInput;
   comeback?: CustomerIdentityComebackInput;
+  gift?: CustomerIdentityGiftInput;
 }
