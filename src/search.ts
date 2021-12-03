@@ -12,4 +12,5 @@ export interface SearchResult<T> {
   nbHits: number;
   nbPages: number;
   isLastPage: boolean;
+  queryID: string;
 }
