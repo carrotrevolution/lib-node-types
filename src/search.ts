@@ -11,7 +11,7 @@ export interface SearchResultItem<T> {
 }
 
 export interface SearchResult<T> {
-  results?: SearchResultItem<T>;
+  results?: SearchResultItem<T>[];
   page: number;
   hitsPerPage: number;
   nbHits: number;
