@@ -5,8 +5,13 @@ export interface SearchInput {
   hitsPerPage: number;
 }
 
+export interface SearchResultItem<T> {
+  items?: T;
+  queryID?: string;
+}
+
 export interface SearchResult<T> {
-  results?: T;
+  results?: SearchResultItem<T>;
   page: number;
   hitsPerPage: number;
   nbHits: number;
