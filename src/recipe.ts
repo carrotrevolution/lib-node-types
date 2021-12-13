@@ -21,6 +21,7 @@ export interface RecipeContent {
   title: string;
   lang: SupportedLanguage;
   ingredientsMD?: string;
+  keywords?: string;
   ingredientsText?: string;
   previewImageURL?: string;
   previewVideoURL?: string;
