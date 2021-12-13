@@ -69,6 +69,7 @@ export interface CreateRecipeContentInput {
   lang: SupportedLanguage;
   ingredientsMD?: string;
   previewImageURL?: string;
+  keywords?: string;
 }
 
 export interface CreateRecipeInput {
