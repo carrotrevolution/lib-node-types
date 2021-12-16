@@ -15,4 +15,5 @@ export interface SearchResult<T> {
   query?: string;
   filters?: string;
   queryID?: string;
+  indexUsed?: string;
 }
