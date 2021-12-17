@@ -56,6 +56,7 @@ export interface Recipe {
   forVersion?: string;
   forLanguages?: string[];
   forCountries?: string[];
+  published?: boolean;
 }
 
 export interface CreateRecipeShopLinkInput {
@@ -85,6 +86,7 @@ export interface CreateRecipeInput {
   forVersion?: string;
   forLanguages?: string[];
   forCountries?: string[];
+  published?: boolean;
 }
 
 export interface RecipeStepContent {
