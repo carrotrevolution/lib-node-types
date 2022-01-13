@@ -2,6 +2,7 @@ import {SupportedLanguage} from './locale';
 
 export enum SpecialDietType {
   DAIRY_FREE = 'dairy-free',
+  EGG_FREE = 'egg-free',
   GLUTEN_FREE = 'gluten-free',
   NUT_FREE = 'nut-free',
   VEGAN = 'vegan',
@@ -10,6 +11,7 @@ export enum SpecialDietType {
 
 export const SpecialDietTypes = [
   SpecialDietType.DAIRY_FREE,
+  SpecialDietType.EGG_FREE,
   SpecialDietType.GLUTEN_FREE,
   SpecialDietType.NUT_FREE,
   SpecialDietType.VEGAN,
