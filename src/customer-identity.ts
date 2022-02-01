@@ -120,6 +120,7 @@ export interface CustomerIdentityAccount {
   emailConfirmed: boolean;
   firstName?: string;
   preferredLang?: string;
+  createdAt?: Date;
 }
 
 export interface CustomerIdentityAccountInput {
@@ -127,6 +128,7 @@ export interface CustomerIdentityAccountInput {
   emailConfirmed: boolean;
   preferredLang?: string;
   firstName?: string;
+  createdAt?: Date;
 }
 
 export interface CustomerIdentityCooking {
