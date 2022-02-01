@@ -19,6 +19,7 @@ export * from './recipe-log';
 export * from './recipe-rating';
 export * from './revenue-cat';
 export * from './reward';
+export * from './saved-list';
 export * from './search';
 export * from './sendgrid';
 export * from './skill-video';
