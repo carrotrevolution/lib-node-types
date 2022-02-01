@@ -10,7 +10,7 @@ export enum SAVED_LIST_ITEM_TYPE {
 
 export const SAVED_LIST_ITEM_TYPES = [SAVED_LIST_ITEM_TYPE.RECIPE];
 
-interface SavedListItem {
+export interface SavedListItem {
   type: SAVED_LIST_ITEM_TYPE;
   ref: string;
 }
