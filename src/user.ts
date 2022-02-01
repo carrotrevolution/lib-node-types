@@ -10,6 +10,7 @@ export interface User {
   entitlements?: string[];
   role?: string;
   preferredLang?: SupportedLanguage;
+  createdAt?: Date;
 }
 
 export abstract class UserValidators {
