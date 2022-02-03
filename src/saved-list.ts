@@ -18,6 +18,7 @@ export interface SavedListItem {
 export interface SavedList {
   id: string;
   userId: string;
+  profileId: string;
   title?: string;
   type: SAVED_LIST_TYPE;
   items?: SavedListItem[];
