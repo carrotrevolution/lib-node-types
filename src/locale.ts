@@ -8,20 +8,20 @@ export const DefaultLanguage = SupportedLanguage.EN;
 
 export const SupportedLanguages = [
   SupportedLanguage.EN,
-  SupportedLanguage.FI,
   SupportedLanguage.EN_US,
+  SupportedLanguage.FI,
 ];
 
 export enum SupportedCountry {
-  FI = 'FI',
   US = 'US',
   UK = 'UK',
+  FI = 'FI',
 }
 
 export const SupportedCountries = [
-  SupportedCountry.FI,
   SupportedCountry.UK,
   SupportedCountry.US,
+  SupportedCountry.FI,
 ];
 
 export class LangHelper {
