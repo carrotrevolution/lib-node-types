@@ -1,5 +1,6 @@
 export enum SupportedLanguage {
   EN = 'en',
+  EN_US = 'en-us',
   FI = 'fi',
 }
 
@@ -9,6 +10,8 @@ export const SupportedLanguages = [SupportedLanguage.EN, SupportedLanguage.FI];
 
 export enum SupportedCountry {
   FI = 'FI',
+  US = 'US',
+  UK = 'UK',
 }
 
 export const SupportedCountries = [SupportedCountry.FI];
