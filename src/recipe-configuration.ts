@@ -2,8 +2,10 @@ export enum RecipeConfigurationRef {
   SKILL_VIDEOS = 'skill-videos',
   FREE_RECIPES = 'free-recipes',
   FREE_RECIPES_EN_US = 'free-recipes-en-us',
+  FREE_RECIPES_FI = 'free-recipes-fi',
   FREE_RECIPES_ROW = 'free-recipes-row',
   FREE_RECIPES_ROW_EN_US = 'free-recipes-row-en-us',
+  FREE_RECIPES_ROW_FI = 'free-recipes-row-fi',
   CHALLENGES = 'challenges',
   OPEN_AVATARS = 'open-avatars',
 }
@@ -12,8 +14,10 @@ export const RecipeConfigurationRefs = [
   RecipeConfigurationRef.SKILL_VIDEOS,
   RecipeConfigurationRef.FREE_RECIPES,
   RecipeConfigurationRef.FREE_RECIPES_EN_US,
+  RecipeConfigurationRef.FREE_RECIPES_FI,
   RecipeConfigurationRef.FREE_RECIPES_ROW,
   RecipeConfigurationRef.FREE_RECIPES_ROW_EN_US,
+  RecipeConfigurationRef.FREE_RECIPES_ROW_FI,
   RecipeConfigurationRef.CHALLENGES,
   RecipeConfigurationRef.OPEN_AVATARS,
 ];
