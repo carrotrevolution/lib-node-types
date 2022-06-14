@@ -6,6 +6,7 @@ export interface RecipeCollectionElementContent {
   id: string;
   lang: SupportedLanguage;
   title: string;
+  subtitle?: string;
 }
 
 export interface RecipeCollectionElement {
@@ -46,4 +47,5 @@ export interface CreateCollectionInput {
 export interface CreateCollectionElementContentInput {
   lang: SupportedLanguage;
   title: string;
+  subtitle?: string;
 }
